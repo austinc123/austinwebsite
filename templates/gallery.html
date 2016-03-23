@@ -1,0 +1,111 @@
+{% extends "templates/base.html" %}
+
+{% block links %}
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class ="active"><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+{% endblock %}
+{% block jumbotron %}
+<div class="container">
+	<section> 
+		<div class="page-header" id="gallery">
+			<h2>Gallery. <small>Collection of pictures I like</small></h2>
+		</div>
+{% endblock %}
+{% block mainstuff %}
+		<div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="1"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="2"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="3"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="4"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="5"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="6"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="7"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="8"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="/static/images/hanauma.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>Hanauma Bay</h3>
+						<p>Went here over summer break. Very fun experience.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/lake_tahoe.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>Lake Tahoe</h3>
+						<p>A great place to ski and enjoy the scenery.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/yosemite.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>Yosemite</h3>
+						<p>Beautiful nature scenes. Can't wait to go back.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/innout.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>In n Out</h3>
+						<p>Best fast food resturant.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/redwood.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>Redwood National Park</h3>
+						<p>Hike to escape the monotonony of life.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/santacruz.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>Santa Cruz</h3>
+						<p>Beach. Sunshine. Enough said.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/beijing.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>Beijing</h3>
+						<p>My birthplace.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/park.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>Calabazas Park</h3>
+						<p>Grew up on this park. #Ballislife</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/static/images/golden-gate-bridge-at-dusk.jpg" alt="Text of image">
+					<div class="carousel-caption">
+						<h3>San Francisco</h3>
+						<p>What people imagine when I say NorCal.</p>
+					</div>
+				</div>
+			
+			</div>
+		<a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+  			<span class="glyphicon glyphicon-chevron-left"></span>
+  		</a>
+  			<a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+  				<span class="glyphicon glyphicon-chevron-right"></span>
+ 			</a>
+		</div>
+	</section>
+</div>
+
+{% endblock %}
+
+
+
+
+	

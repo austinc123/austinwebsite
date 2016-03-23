@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset = "UTF-8">
+		<title>My Website</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body> 
+		
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a href="" class="navbar-brand">Austin Cai</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+				<a href="" class="btn btn-warning navbar-btn navbar-right">Click Me</a>
+					<ul class="nav navbar-nav">
+						{% block links %}
+						<li class ="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						{% endblock %}
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+	{% block jumbotron %}
+		<header class="mainheader">
+			<div class="bg"></div>
+			<div class= "jumbotron">
+				<!-- <div class= "container text-center"> -->
+					<h1>Austin Cai</h1>
+					<p>Aspiring student. Eager to learn. Not afraid to fail.</p>
+			<!-- 	</div> -->
+			</div>
+		</header>
+
+	{% endblock %}
+
+	{% block mainstuff %}
+
+	{% endblock %}
+	<footer class="mainfooter">
+		<div class="container">
+			<p class="text-muted"> &copy; 2016 Austin Cai. All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script   src="https://code.jquery.com/jquery-2.2.2.min.js"integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
+  	<script src="/static/js/javascript.js"></script>
+	</body>
+</html>

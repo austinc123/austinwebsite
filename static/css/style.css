@@ -1,0 +1,241 @@
+@font-face {
+	font-family: "Arkhip";
+	src: url("/static/fonts/Arkhip_font.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Stellar";
+	src: url("/static/fonts/Stellar-Regular.otf") format("opentype");
+}
+body{
+	background: white;
+	font-family: "Georgia";
+	text-align: center;
+	font-size: 88%;
+	color: #000305;
+	padding-top: 20px;
+}
+
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+
+}
+a:link, a:visited {
+	color: #4169E1;
+
+}
+
+a:hover, a:active {
+	/*background-color: #00BFFF;*/
+	color: #666;
+
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+h4{
+	text-align: center;
+}
+nav{
+	text-align: center;
+}
+
+a.indivheader{
+	margin: 0px;
+	padding: 0px;
+}
+
+h3{
+	margin:0px;
+	padding: 0px;
+}
+
+h5{
+	margin:0px;
+	padding: 0px;
+}
+.contactinfo {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:3% 5%;
+	margin-top: 2%;
+	text-align: center;
+
+}
+
+.mainheader img {
+	width: 30%;
+	height: auto;
+	margin: 2% 0;
+}
+
+.mainheader nav {
+	background-color: #191970;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainheader nav ul {
+	padding-left: 0;
+	margin: 0 auto;
+}
+
+.mainheader nav ul li {
+	float:left;
+	display: inline;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link, .mainheader nav .active a:visited {
+	background-color: #FFD700;
+	text-shadow: none;
+
+}
+
+.mainheader nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainContent {
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content {
+	float: left;
+
+}
+
+.topcontent {
+	background: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:3% 5%;
+	margin-top: 2%;
+
+}
+.bottomcontent {
+	background: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:3% 5%;
+	margin-top: 2%;
+
+}
+
+.mainfooter {
+	width: 100%;
+	height: 40px;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+/*	background-color: #191970;*/
+	color: #FFFFFF;
+	margin: 10% 0;
+}
+
+.mainfooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #666;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}
+	.mainheader img {
+		width: 100%;
+	}
+
+	.mainheader nav{
+		height: 160px;
+	}
+
+	.mainheader nav ul {
+		padding-left: 0;
+	}
+
+	.mainheader nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.mainheader nav a:link, .mainheader hav a:visited {
+		padding:10px 25 px;
+		height: 20px;
+		display: block;
+	}
+
+}
+
+.carousel-inner>.item>img{
+	width:2000px; 
+    height: 900px;
+}
+
+.bg {
+  background: url('/static/images/golden-gate-bridge-at-dusk.jpg') no-repeat 80% 45%;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  height: 350px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+
+.jumbotron h1{
+	font-family:"Arkhip";
+	padding-top: 20px;
+}
+.jumbotron p{
+	font-family:"Stellar", Arial;
+	font-weight: 500;
+	line-height: 12px;
+}
+
+.carousel-caption p{
+	font-size: 13px;
+}
+
+.carousel-caption{
+	
+	margin-left: 15%;
+	margin-right: 15%;
+	
+    background: rgba(0,0,0,0.5);
+}
+
+
+

@@ -1,0 +1,105 @@
+{% extends  "templates/base.html" %}
+
+{% block links %}
+<li><a href="index.html">Home</a></li>
+<li class ="active"><a href="about.html">About</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+{% endblock %}
+
+{% block mainstuff %}
+<div class="container">
+	<section>
+		<div class="page-header" id="gallery">
+			<h2>About Me <small>Interesting facts about me</small></h2>
+		</div>
+
+		<div class="panel-group" id="accordian">
+			<div class="panel panel-default">
+				<div class= "panel-heading">
+					<div class="panel-title">
+						<a href="#collapse-1" data-toggle="collapse" data-parent="#accordian">
+							Fact one
+						</a>
+					</div>
+					<div id="collapse-1" class="panel-collapse collapse in">
+						<div class="panel-body">
+						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class= "panel-heading">
+					<div class="panel-title">
+						<a href="#collapse-2" data-toggle="collapse" data-parent="#accordian">
+							Fact two
+						</a>
+					</div>
+					<div id="collapse-2" class="panel-collapse collapse">
+						<div class="panel-body">
+						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class= "panel-heading">
+					<div class="panel-title">
+						<a href="#collapse-3" data-toggle="collapse" data-parent="#accordian">
+							Fact three
+						</a>
+					</div>
+					<div id="collapse-3" class="panel-collapse collapse">
+						<div class="panel-body">
+						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class= "panel-heading">
+					<div class="panel-title">
+						<a href="#collapse-4" data-toggle="collapse" data-parent="#accordian">
+							Fact four
+						</a>
+					</div>
+					<div id="collapse-4" class="panel-collapse collapse">
+						<div class="panel-body">
+						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+<!-- 	</section>
+<div class="mainContent">		
+	<div class="content">
+		<article class="topcontent">
+			<header>
+				<h2><a href="#" title ="About Me">About Me</a></h2>
+			</header>
+
+			<footer>
+				<p class="post-info">written by Austin</p>
+			</footer>
+
+			<content>
+				<p>I'm currently a Sophomore at <a href="http://umich.edu"> the University of Michigan</a> studying Informatics and Computer Science. I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy. As much as I like meat, if knowledge was a vegetable, I would glady become a vegetarian.</p>
+			</content>
+		</article>
+	</div>
+</div>
+ -->
+{% endblock mainstuff %}
+
+
+

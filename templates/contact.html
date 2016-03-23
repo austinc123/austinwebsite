@@ -1,0 +1,40 @@
+{% extends "templates/base.html" %}
+
+{% block links %}
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li class ="active"><a href="contact.html">Contact</a></li>
+
+{% endblock %}
+{% block mainstuff %}
+<section> 
+	<div class="well">
+		<div class = "container text-center">
+			<h3>Subsribe for weekly newsletters from me</h3>
+			<p>Enter your name and email</p>
+
+			<form action ="" class="form-inline" method = "post">
+				<div class="form-group">
+					<label form="subscription">Subscribe</label>
+					<input type="text" class="form-control" id="subscription" placeholder="Your name">
+				</div>
+				<div class="form-group">
+					<label form="email">Email address</label>
+					<input type="text" class="form-control" id="email" name = "email" placeholder="Enter your email">
+				</div>
+				<button type="submit" class="btn btn-default">Subscribe</button>
+				<hr>
+			</form>
+		</div>
+	</div>
+</section>
+
+	<div class="mainContent">	`
+			<article class="contactinfo">
+				<h2><a href="mailto:haoliang@umich.edu">Email Me!</a></h2><br>
+				<h2><a href="https://www.linkedin.com/in/austinc123">Link with Me!</a></h2>
+			</article>
+	</div>
+
+{% endblock %}
