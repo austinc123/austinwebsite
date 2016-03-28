@@ -32,9 +32,9 @@ class AboutHandler(webapp2.RequestHandler):
     	template = JINJA_ENVIRONMENT.get_template('templates/about.html')
     	self.response.write(template.render())
 
-class IndexHandler(webapp2.RequestHandler):
+class HomeHandler(webapp2.RequestHandler):
     def get(self):
-    	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+    	template = JINJA_ENVIRONMENT.get_template('templates/home.html')
     	self.response.write(template.render())
 
 class GalleryHandler(webapp2.RequestHandler):
@@ -48,29 +48,62 @@ class ContactHandler(webapp2.RequestHandler):
     	self.response.write(template.render())
 
     def post(self):
-        template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
-        user_address = str(self.request.get("email"))
-
+        # template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+        # 
         # if not mail.is_email_valid(user_address):
         #     #so something
         #     logging.info("hi")
         # else:
         logging.info("got it")
         # confirmation_url = createNewUserConfirmation(self.request)
-        sender_address = str('haoliangc96@gmail.com')
-        subject = "Confirm your registration"
-        body = "Thank you for filling this form out. Click on link below"
-        logging.info(sender_address)
-        logging.info(user_address)
-        mail.send_mail(sender_address, user_address, subject, body)
+        # sender_address = str('haoliangc96@gmail.com')
+        # subject = "Confirm your registration"
+        # body = "Thank you for filling this form out. Click on link below"
+        # logging.info(sender_address)
+        # logging.info(user_address)
+        # mail.send_mail(sender_address, user_address, subject, body)
+        # self.response.write(template.render())
+
+        userMail=self.request.get("email")
+        name=self.request.get("subscription")
+        message=mail.EmailMessage(sender="personalwebsiteservice@gmail.com",subject="Test")
+
+        # not tested
+        if not mail.is_email_valid(userMail):
+            self.response.out.write("Wrong email! Check again!")
+
+        message.to=userMail
+        message.body="""Thank you!
+                You have entered following information:
+                Your mail: %s
+                Name: %s""" %(userMail,name)
+        message.send()
+        self.response.out.write("Message sent!")
+
+
+class ErrorHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/error.html')
         self.response.write(template.render())
 
+# def handle_404(request, response, exception):
+#     logging.exception(exception)
+#     response.write('Oops! I could swear this page was here!')
+#     response.set_status(404)
 
+# def handle_500(request, response, exception):
+#     logging.exception(exception)
+#     response.write('A server error occurred!')
+#     response.set_status(500)
 
 app = webapp2.WSGIApplication([
-    ('/', IndexHandler),
+    ('/' , HomeHandler),
     ('/about.html', AboutHandler),
-    ('/index.html', IndexHandler),
+    ('/home.html', HomeHandler),
     ('/gallery.html', GalleryHandler),
-    ('/contact.html' , ContactHandler)
+    ('/contact.html' , ContactHandler),
+    ('/.*', ErrorHandler)
 ], debug=True)
+
+# app.error_handlers[404] = handle_404
+# app.error_handlers[500] = handle_500

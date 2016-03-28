@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 
 	<head>
@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -26,10 +28,9 @@
 					<a href="" class="navbar-brand">Austin Cai</a>
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse">
-				<a href="" class="btn btn-warning navbar-btn navbar-right">Click Me</a>
 					<ul class="nav navbar-nav">
 						{% block links %}
-						<li class ="active"><a href="index.html">Home</a></li>
+						<li class ="active"><a href="home.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact</a></li>
@@ -55,12 +56,60 @@
 	{% block mainstuff %}
 
 	{% endblock %}
-	<footer class="mainfooter">
-		<div class="container">
-			<p class="text-muted"> &copy; 2016 Austin Cai. All rights reserved.</p>
-		</div>
-	</footer>
 
+	 	<footer class="footer-distributed">
+			<div class="footer-left">
+
+				<h3>Austin<span>Cai</span></h3>
+
+				<p class="footer-links">
+					<a href="https://www.umich.edu">U of M</a>
+					·
+					<a href="http://www.lsa.umich.edu">LSA</a>
+					·
+					<a href="https://www.si.umich.edu">School of Information</a>
+				</p>
+				<p class="footer-company-name"> &copy; 2015 Austin Cai. All rights reserved</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>100 Observatory Street</span> Ann Arbor, Michigan</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 408 6668669</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:haoliang@umich.edu">haoliang@umich.edu</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Contact Me</span>
+					Feel free to hit me up. Facebook, Email, whatever. I'm always open to chat. Just not twitter, I don't actaully use it.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/haoliang.cai"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/austinc123"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.github.com/austinc123"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 
 	<script   src="https://code.jquery.com/jquery-2.2.2.min.js"integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
