@@ -48,12 +48,8 @@ class ContactHandler(webapp2.RequestHandler):
     	self.response.write(template.render())
 
     def post(self):
-        # template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
-        # 
-        # if not mail.is_email_valid(user_address):
-        #     #so something
-        #     logging.info("hi")
-        # else:
+        template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+      
         logging.info("got it")
         # confirmation_url = createNewUserConfirmation(self.request)
         # sender_address = str('haoliangc96@gmail.com')
@@ -66,19 +62,20 @@ class ContactHandler(webapp2.RequestHandler):
 
         userMail=self.request.get("email")
         name=self.request.get("subscription")
-        message=mail.EmailMessage(sender="personalwebsiteservice@gmail.com",subject="Test")
+        message=mail.EmailMessage(sender="haoliang@umich.edu",subject="Weekly Email Newsletter")
 
         # not tested
         if not mail.is_email_valid(userMail):
             self.response.out.write("Wrong email! Check again!")
 
-        message.to=userMail
-        message.body="""Thank you!
-                You have entered following information:
-                Your mail: %s
-                Name: %s""" %(userMail,name)
+        message.to = userMail
+        message.body ="""Thank you for subscribing!
+            You have entered following information:
+            Your mail: %s
+            Name: %s
+            """ %(userMail,name)
         message.send()
-        self.response.out.write("Message sent!")
+        self.response.out.write(template.render())
 
 
 class ErrorHandler(webapp2.RequestHandler):
@@ -86,15 +83,6 @@ class ErrorHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('templates/error.html')
         self.response.write(template.render())
 
-# def handle_404(request, response, exception):
-#     logging.exception(exception)
-#     response.write('Oops! I could swear this page was here!')
-#     response.set_status(404)
-
-# def handle_500(request, response, exception):
-#     logging.exception(exception)
-#     response.write('A server error occurred!')
-#     response.set_status(500)
 
 app = webapp2.WSGIApplication([
     ('/' , HomeHandler),

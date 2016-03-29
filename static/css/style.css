@@ -31,89 +31,14 @@ body{
 }
 
 #my-navbar>.container {
-	margin-left: 10px;
+	margin-left: 2.5%;
 }
+
 /* custom cursor */
 a:hover {
 	cursor: url("/static/images/cursor.cur"), default;
 }
 
-
-/*a:link, a:visited {
-	color: #4169E1;
-}
-
-a:hover, a:active {
-	color: #666;
-}
-*/
-/*h1{
-	text-transform: uppercase;
-	text-align: center;
-}
-
-*/
-/*
-.contactinfo {
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	padding:3% 5%;
-	margin-top: 2%;
-	text-align: center;
-
-}
-*/
-/*.mainheader img {
-	width: 30%;
-	height: auto;
-	margin: 2% 0;
-}
-
-.mainheader nav {
-	background-color: #191970;
-	height: 40px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
-
-.mainheader nav ul {
-	padding-left: 0;
-	margin: 0 auto;
-}
-
-.mainheader nav ul li {
-	float:left;
-	display: inline;
-}
-
-.mainheader nav a:link, .mainheader nav a:visited {
-	color: #FFF;
-	display: inline-block;
-	padding: 10px 25px;
-	height: 20px;
-}
-
-.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link, .mainheader nav .active a:visited {
-	background-color: #FFD700;
-	text-shadow: none;
-
-}
-
-.mainheader nav ul li a {
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
-*/
-/*.mainContent {
-	line-height: 25px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
-*/
 
 /* ============================================================
 Gallery Page
@@ -155,12 +80,12 @@ Gallery Page
 		display: block;
 	}
 
-}
+}  
 
-/*dont hard code it*/
+
 .carousel-inner>.item>img{
-	width:2000px; 
-    height: 900px;
+	width: 350%; 
+    height: 90%;
 }
 
 .bg {
@@ -191,36 +116,42 @@ Gallery Page
 }
 
 .carousel-caption p{
-	font-size: 13px;
+	font-size: 150%;
 }
 
 .carousel-caption{
-	
 	margin-left: 15%;
 	margin-right: 15%;
-	
     background: rgba(0,0,0,0.5);
 }
 
+/*responsive layout for mobile devices*/
+
+
+/*@media only screen and (max-device-width: 480px) {
+	.carousel-caption{
+		display: none;
+	}
+}
+*/
 
 /* ============================================================
 Jumbotron Home Page
 ============================================================ */
+
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-
-
 section.module:last-child {
   margin-bottom: 0;
 }
-section.module h2 {
+/*section.module h2 {
   margin-bottom: 40px;
   font-family: "Roboto Slab", serif;
   font-size: 30px;
-}
+}*/
 section.module p {
   margin-bottom: 40px;
   font-size: 16px;
@@ -229,13 +160,15 @@ section.module p {
 section.module p:last-child {
   margin-bottom: 0;
 }
+
 section.module.content {
   padding: 40px 0;
   text-align: left;
 }
-/*section.module.content p {
-	float: right;
-}*/
+section.module.content p {
+	float: 
+}
+
 section.module.parallax {
   height: 600px;
   background-position: 50% 50%;
@@ -433,7 +366,6 @@ Footer
 	margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
