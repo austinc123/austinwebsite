@@ -39,6 +39,12 @@ a:hover {
 	cursor: url("/static/images/cursor.cur"), default;
 }
 
+#profile-logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+}
 
 /* ============================================================
 Gallery Page
@@ -46,6 +52,7 @@ Gallery Page
 .page-header {
 	padding-top: 20px;
 }
+
 .carousel {
 	margin-left: 5%;
 	margin-right: 5%;
@@ -82,10 +89,9 @@ Gallery Page
 
 }  
 
-
 .carousel-inner>.item>img{
 	width: 350%; 
-    height: 90%;
+  height: 90%;
 }
 
 .bg {
