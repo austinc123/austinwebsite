@@ -21,6 +21,7 @@ body{
 /*	padding-top: 20px;*/
 }
 
+
 .h2 {
 	font-family: "Stellar";
 }
@@ -43,7 +44,11 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 5%;
+  width: 48px;
+}
+
+.navbar-nav>li>a {
+  margin-left: 10px;
 }
 
 /* ============================================================
@@ -90,8 +95,8 @@ Gallery Page
 }  
 
 .carousel-inner>.item>img{
-	width: 350%; 
-  height: 90%;
+	width: 3500px; 
+  height: 900px;
 }
 
 .bg {
@@ -128,7 +133,7 @@ Gallery Page
 .carousel-caption{
 	margin-left: 15%;
 	margin-right: 15%;
-    background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
 }
 
 /*responsive layout for mobile devices*/
