@@ -8,8 +8,13 @@
 
 {% endblock %}
 
+{% block body %}
+<block id="aboutpage">
+{% endblock %}
+
 {% block mainstuff %}
-<div class="container">
+<div class="aboutbg">
+<div class="container" id="aboutbg">
 	<section>
 		<div class="page-header" id="gallery">
 			<h2>About Me <small>Interesting facts about me</small></h2>
@@ -19,13 +24,13 @@
 			<div class="panel panel-default">
 				<div class= "panel-heading">
 					<div class="panel-title">
-						<a href="#collapse-1" data-toggle="collapse" data-parent="#accordian">
+						<a href="#collapse-1" data-toggle="collapse" data-parent="#accordian" onclick="document.body.style.backgroundImage = 'url(/static/images/sunlight.jpg)'">
 							Fact one
 						</a>
 					</div>
-					<div id="collapse-1" class="panel-collapse collapse in">
+					<div id="collapse-1" class="panel-collapse collapse">
 						<div class="panel-body">
-						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						Growing up in San Jose, California I was spoiled by the good weather. As such, I feel like my mood is dependent on the amount of sun there is. I'm like a solar-panel. 
 						</div>
 					</div>
 				</div>
@@ -34,13 +39,13 @@
 			<div class="panel panel-default">
 				<div class= "panel-heading">
 					<div class="panel-title">
-						<a href="#collapse-2" data-toggle="collapse" data-parent="#accordian">
+						<a href="#collapse-2" data-toggle="collapse" data-parent="#accordian" onclick="document.body.style.backgroundImage = 'url(/static/images/nightsky.jpg)'">
 							Fact two
 						</a>
 					</div>
 					<div id="collapse-2" class="panel-collapse collapse">
 						<div class="panel-body">
-						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						As much as I like the sun, I actually like the night more. At times I would go to one of the parks with my friends and climb up on the roof of the day-care building and gaze up the stars. #deep
 						</div>
 					</div>
 				</div>
@@ -49,13 +54,13 @@
 			<div class="panel panel-default">
 				<div class= "panel-heading">
 					<div class="panel-title">
-						<a href="#collapse-3" data-toggle="collapse" data-parent="#accordian">
+						<a href="#collapse-3" data-toggle="collapse" data-parent="#accordian" onclick="document.body.style.backgroundImage = 'url(/static/images/moutains.jpg)'">
 							Fact three
 						</a>
 					</div>
 					<div id="collapse-3" class="panel-collapse collapse">
 						<div class="panel-body">
-						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						I used to really like mountain biking. The thrill and adrenaline that goes into the rounding the bends and jumping over crevices was exhilrating. But then I crashed and broke my bike. Thus, I'm slightly traumatized at the moment.
 						</div>
 					</div>
 				</div>
@@ -64,13 +69,13 @@
 			<div class="panel panel-default">
 				<div class= "panel-heading">
 					<div class="panel-title">
-						<a href="#collapse-4" data-toggle="collapse" data-parent="#accordian">
+						<a href="#collapse-4" data-toggle="collapse" data-parent="#accordian" onclick="document.body.style.backgroundImage = 'url(/static/images/zootopia.jpg)'">
 							Fact four
 						</a>
 					</div>
 					<div id="collapse-4" class="panel-collapse collapse">
 						<div class="panel-body">
-						I am really intersted in technology and the way information shapes our lives. Born in Beijing but raised in the suburbs of San Jose, California, I appreciate good food and meritocracy.
+						I love movies! Like really love movies! I watched a decent amount of movies. When people go out, I stay in and watch movies. Recently I watched Zootopia and I don't care what others say, but it's on my Top 10 forsure. 
 						</div>
 					</div>
 				</div>
@@ -78,6 +83,8 @@
 		</div>
 	</section>
 </div>
+</div>
+
 
 
 

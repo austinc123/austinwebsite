@@ -1,6 +1,6 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
+{% block head %}
 	<head>
 		<meta charset = "UTF-8">
 		<title>My Website</title>
@@ -12,9 +12,9 @@
 		<link rel="shortcut icon" href ="/static/images/favicon.ico">
 		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-
+{% endblock %}
+	
 	<body> 
-		
 
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
 			<div class="container">
@@ -45,10 +45,10 @@
 		<header class="mainheader">
 			<div class="bg"></div>
 			<div class= "jumbotron">
-				<!-- <div class= "container text-center"> -->
+				<div class= "container text-center">
 					<h1>Austin Cai</h1>
 					<p>Aspiring student. Eager to learn. Not afraid to fail.</p>
-			<!-- 	</div> -->
+				</div>
 			</div>
 		</header>
 
