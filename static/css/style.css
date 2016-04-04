@@ -22,7 +22,6 @@ body{
 	text-align: center;
 	font-size: 88%;
 	color: #000305;
-/*	padding-top: 20px;*/
 }
 
 #aboutpage {
@@ -148,11 +147,7 @@ Jumbotron Home Page
 section.module:last-child {
   margin-bottom: 0;
 }
-/*section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
-}*/
+
 section.module p {
   margin-bottom: 40px;
   font-size: 16px;
@@ -432,6 +427,7 @@ Contact Page
 label{
   font-size: 150%;
 }
+
 
 /* ============================================================
 Error Page
