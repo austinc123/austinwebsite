@@ -74,7 +74,6 @@ Gallery Page
 }
 
 
-
 .carousel-inner>.item>img{
   width: 2000%; 
   height: 800%;
@@ -91,6 +90,7 @@ Gallery Page
 .jumbotron h1{
 	font-family:"Arkhip";
 	padding-top: 20px;
+  margin-top: 5%;
 }
 .jumbotron p{
 	font-family:"Stellar", Arial;
