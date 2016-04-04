@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-{% block head %}
 	<head>
 		<meta charset = "UTF-8">
-		<title>My Website</title>
-		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+		<title>Austin's Website</title>
+		<link rel="stylesheet" property='stylesheet' type="text/css" href="/static/css/bootstrap.min.css">
+		<link rel="stylesheet" property='stylesheet' type="text/css" href="/static/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" property='stylesheet' type="text/css" href="/static/css/style.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 		<link rel="shortcut icon" href ="/static/images/favicon.ico">
 		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-{% endblock %}
 
-{% block body %}
+
 	<body> 
-{% endblock %}
+
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
 			<div class="container">
 				<div class="navbar-header">
@@ -26,18 +24,17 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<img src="/static/images/profilepic.png" id ="profile-logo">
-					<!-- <a href="" class="navbar-brand">Austin Cai</a> -->
+					<img src="/static/images/profilepic.png" id ="profile-logo" alt="Profile Image">
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse">
+					{% block links %}
 					<ul class="nav navbar-nav">
-						{% block links %}
 						<li class ="active"><a href="home.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact</a></li>
-						{% endblock %}
 					</ul>
+					{% endblock %}
 				</div>
 			</div>
 		</nav>
@@ -113,7 +110,7 @@
 
 		</footer>
 
-	<script  src="https://code.jquery.com/jquery-2.2.2.min.js"integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="crossorigin="anonymous"></script>
+	<script  src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="static/js/bootstrap.min.js"></script>
   	<script src="/static/js/javascript.js"></script>
