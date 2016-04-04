@@ -14,12 +14,19 @@
 }
 body{
 	background: white;
-/*  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
+  background: cover;
+  background-position: center;
 	font-family: "pier-regular";
 	text-align: center;
 	font-size: 88%;
 	color: #000305;
+
 /*	padding-top: 20px;*/
+}
+
+#aboutpage {
+  background-image: url("/static/images/beijing.jpg");
 }
 
 #my-navbar {
@@ -145,13 +152,12 @@ Gallery Page
 
 /*responsive layout for mobile devices*/
 
-
-/*@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
 	.carousel-caption{
 		display: none;
 	}
 }
-*/
+
 
 /* ============================================================
 Jumbotron Home Page
@@ -256,7 +262,7 @@ About Page
   /*background-color:#e18764;*/
   width: 100%;
   height: 100%;
-  max-width: none;
+
   max-height: none;
 }
 
@@ -292,7 +298,7 @@ Footer
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font: normal 25px 'Arkhip', cursive;
 	margin: 0;
 }
 
@@ -430,7 +436,12 @@ Footer
 	}
 
 }
-
+/* ============================================================
+Contact Page
+============================================================ */
+label{
+  font-size: 150%;
+}
 /* ============================================================
 Error Page
 ============================================================ */
